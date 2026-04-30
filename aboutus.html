@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Kelina Hospital</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="about-page">
+
+<!-- HEADER (simple reuse of your nav) -->
+ <header class="header" data-aos="fade-down">
+    <!-- Logo -->
+
+    <div class="logo">
+      <div class="logic">
+        <div class="logo-spin">
+          <img src="kimg/logo.png" alt="">
+        </div>
+        <div class="logim">
+          <div class="logo-text">Kelina Hospital</div>
+          <div class="logo-subtext">Minimal Access Surgery</div>
+        </div>
+      </div>
+    </div>
+
+<div class="over">
+  <nav class="nav">
+  <a href="index.html">Home</a>
+   <ul class="nav-list">
+  <li class="nav-item sep">
+    <a href="aboutus.html" class="nav-link dropdown-toggle"><u>About Us</u></a>
+    <ul class="dropdown-content">
+      <li><a href="service.html#lab">Surgery</a></li>
+      <li><a href="service.html#lab">Consultation</a></li>
+      <li><a href="service.html#lab">Laboratory</a></li>
+      <li><a href="service.html#lab">Diagnostics</a></li>
+    </ul>
+  </li>
+</ul>
+   <div class="sep"><a href="service.html">Services </a></div>
+   <div class="sep"><a href="news.html">News and Articles</a></div>
+
+   <div class="sep"><a href="contactus.html">Contact Us</a></div>
+</nav>
+</div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <a href="appointment.html"><button class="btn">Request Appointment</button></a>
+    </div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </header>
+
+
+<!-- HERO SECTION -->
+<section class="about-hero">
+  <div class="about-hero-content">
+    <h1 data-aos="fade-up" class="span">About Kelina Hospital</h1>
+    <p data-aos="fade-up" data-aos-delay="100" class="span">
+      Excellence in Minimal Access Surgery and Patient Care
+    </p>
+  </div>
+</section>
+
+<!-- WHO WE ARE -->
+<section class="about-info">
+
+  <div class="about-box" data-aos="fade-right">
+    <h2>Who We Are</h2>
+    <p>
+      Kelina Hospital is a specialist surgical hospital focused on Endoscopic and Laser Surgery.
+      We provide advanced medical care with modern technology and highly trained professionals.
+      Kelina Hospital is a specialist surgical hospital dedicated to providing advanced medical and surgical care using modern, minimally invasive techniques. We focus on endoscopic and laser surgery, ensuring patients benefit from safer procedures, faster recovery, and reduced hospital stay.
+
+We are a team of highly trained medical professionals committed to excellence, innovation, and compassionate care. Our hospital is equipped with state-of-the-art technology that meets international standards, allowing us to deliver accurate diagnosis and effective treatment.
+
+At Kelina Hospital, we believe in putting patients first. We combine expertise, technology, and dedication to deliver healthcare services that improve lives and restore health with dignity.
+    </p>
+  </div>
+
+  <div class="about-box" data-aos="fade-left">
+    <h2>Our Vision</h2>
+    <p>
+      To be a leading hospital in Africa delivering world-class minimally invasive surgical care
+      with excellence, dignity, and innovation.Kelina Hospital envisions becoming a leading center of excellence in minimal access and advanced surgical care in Africa. We are committed to transforming healthcare delivery through innovation, modern medical technology, and highly skilled professionals.
+
+Our vision is to create a healthcare environment where patients receive safe, effective, and compassionate treatment with minimal recovery time. We aim to continuously improve surgical outcomes, expand access to specialized care, and set new standards in patient-centered healthcare services.
+
+Through dedication, integrity, and continuous advancement, Kelina Hospital strives to be a trusted name in healthcare—delivering world-class medical care that enhances lives and promotes long-term wellness.
+    </p>
+  </div>
+
+</section>
+  <section class="section">
+    <div class="overlay"></div>
+    <div class="contain">
+      <div class="sup">
+      <div class="cars" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon"><i class="fas fa-heartbeat"></i></div>
+        <h3>Mission</h3>
+        <p>
+          The mission of Kelina Hospital is to promote, preserve and restore individual and family health by providing expert medical and surgical care within an innovative and dignified environment.
+        </p>
+      </div>
+      </div>
+      <div class="sup">
+      <div class="cars" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon"><i class="fas fa-star"></i></div>
+        <h3>Objective</h3>
+        <p>
+          The mission of Kelina Hospital is to promote, preserve and restore individual and family health by providing expert medical and surgical care within an innovative and dignified environment.
+        </p>
+      </div>
+      </div>
+    <div class="sup">
+      <div class="cars" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h3>Management and Staff</h3>
+        <p>
+          The mission of Kelina Hospital is to promote, preserve and restore individual and family health by providing expert medical and surgical care within an innovative and dignified environment.
+        </p>
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- FOOTER -->
+<footer class="about-footer"  data-aos="fade-up" data-aos-delay="300">
+
+  <p>© 2026 Kelina Hospital. All Rights Reserved.</p>
+
+</footer>
+
+<!-- AOS -->
+<script>
+  const btn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      btn.style.display = "flex";
+    } else {
+      btn.style.display = "none";
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<script>
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+</script>
+<script>
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
+
+</body>
+</html>

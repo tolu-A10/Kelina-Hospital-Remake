@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelina Facilities</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="klnx-body-shell">
+
+<header class="header" data-aos="fade-down">
+    <!-- Logo -->
+
+    <div class="logo">
+      <div class="logic">
+        <div class="logo-spin">
+          <img src="kimg/logo.png" alt="">
+        </div>
+        <div class="logim">
+          <div class="logo-text">Kelina Hospital</div>
+          <div class="logo-subtext">Minimal Access Surgery</div>
+        </div>
+      </div>
+    </div>
+
+<div class="over">
+  <nav class="nav">
+  <a href="index.html">Home</a>
+   <ul class="nav-list">
+  <li class="nav-item sep">
+    <a href="aboutus.html" class="nav-link dropdown-toggle">About Us</a>
+    <ul class="dropdown-content">
+      <li><a href="service.html#lab">Surgery</a></li>
+      <li><a href="service.html#lab">Consultation</a></li>
+      <li><a href="service.html#lab">Laboratory</a></li>
+      <li><a href="service.html#lab">Diagnostics</a></li>
+    </ul>
+  </li>
+</ul>
+   <div class="sep"><a href="service.html">Services </a></div>
+   <div class="sep"><a href="news.html">News and Articles</a></div>
+
+   <div class="sep"><a href="contactus.html">Contact Us</a></div>
+</nav>
+</div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <a href="appointment.html"><button class="btn">Request Appointment</button></a>
+    </div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </header>
+
+
+  <section class="klnx-hero-veil">
+    <h2 class="klnx-hero-title">Kelina Facilities</h2>
+    <p class="klnx-hero-subtext">World-class healthcare infrastructure designed for your comfort and safety</p>
+  </section>
+
+  <section class="klnx-section-hub">
+    <h2 class="klnx-section-heading">Our Facilities</h2>
+
+    <div class="klnx-grid-matrix">
+
+      <div class="klnx-card-node" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" alt="">
+        <div class="klnx-card-core">
+          <h3>Modern Operating Theatres</h3>
+          <p>Cutting-edge surgical technology ensuring precision and safety.</p>
+        </div>
+      </div>
+
+      <div class="klnx-card-node" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322" alt="" >
+        <div class="klnx-card-core">
+          <h3>Intensive Care Unit</h3>
+          <p>Advanced ICU with 24/7 monitoring and expert care teams.</p>
+        </div>
+      </div>
+
+      <div class="klnx-card-node" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="" >
+        <div class="klnx-card-core">
+          <h3>Diagnostic Laboratory</h3>
+          <p>Fast, accurate testing powered by modern lab equipment.</p>
+        </div>
+      </div>
+
+      <div class="klnx-card-node"  data-aos="fade-up" data-aos-delay="400">
+        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67" alt="">
+        <div class="klnx-card-core">
+          <h3>24/7 Pharmacy</h3>
+          <p>Reliable access to certified medications anytime.</p>
+        </div>
+      </div>
+
+      <div class="klnx-card-node" data-aos="fade-up" data-aos-delay="500">
+        <img src="kimg/olivia-anne-snyder-NkNpDBdi6A0-unsplash.jpg" alt="" >
+        <div class="klnx-card-core">
+          <h3>Radiology & Imaging</h3>
+          <p>MRI, CT scans, and ultrasound for precise diagnosis.</p>
+        </div>
+      </div>
+
+      <div class="klnx-card-node" data-aos="fade-up" data-aos-delay="600">
+        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309" alt="">
+        <div class="klnx-card-core">
+          <h3>Private Patient Rooms</h3>
+          <p>Comfort-focused rooms for recovery and relaxation.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<script>
+  const btn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      btn.style.display = "flex";
+    } else {
+      btn.style.display = "none";
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<script>
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+</script>
+<script>
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
+
+</body>
+</html>
+
