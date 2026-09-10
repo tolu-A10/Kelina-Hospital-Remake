@@ -275,24 +275,45 @@
     // Tap-to-open dropdown on touch/mobile (hover doesn't work on touch screens)
     document.querySelectorAll(".dropdown-toggle").forEach((toggleLink) => {
       toggleLink.addEventListener("click", (e) => {
-        if (window.innerWidth <= 768) {
-          e.preventDefault();
-          toggleLink.closest(".nav-item").classList.toggle("open");
-        }
-      });
-    });
+        <script>
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
+  const navIcon = toggle.querySelector("i");
 
-    // Close mobile menu when a normal link is tapped
-    document.querySelectorAll(".nav a:not(.dropdown-toggle)").forEach((link) => {
-      link.addEventListener("click", () => {
-        nav.classList.remove("active");
-        toggle.setAttribute("aria-expanded", "false");
-        navIcon.classList.add("fa-bars");
-        navIcon.classList.remove("fa-xmark");
-        document.body.classList.remove("nav-open");
-      });
+  toggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("active");
+
+    toggle.setAttribute("aria-expanded", isOpen);
+
+    navIcon.classList.toggle("fa-bars", !isOpen);
+    navIcon.classList.toggle("fa-xmark", isOpen);
+
+    document.body.classList.toggle("nav-open", isOpen);
+  });
+
+  document.querySelectorAll(".dropdown-toggle").forEach((toggleLink) => {
+    toggleLink.addEventListener("click", (e) => {
+      if (window.innerWidth <= 860) {
+        e.preventDefault();
+
+        const navItem = toggleLink.closest(".nav-item");
+        navItem.classList.toggle("open");
+      }
     });
-  </script>
+  });
+
+  document.querySelectorAll(".nav a:not(.dropdown-toggle)").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+      toggle.setAttribute("aria-expanded", "false");
+
+      navIcon.classList.add("fa-bars");
+      navIcon.classList.remove("fa-xmark");
+
+      document.body.classList.remove("nav-open");
+    });
+  });
+</script>
   <script>
     const header = document.querySelector(".header");
 
